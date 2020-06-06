@@ -5,13 +5,15 @@ import Main from './pages/Main';
 import User from './pages/User';
 
 const Routes = createAppContainer(
-    // criacao de rotas
+    // criacao de rotas com createStackNavigator
     createStackNavigator({
         Main,
         User,
     }, {
         headerLayoutPreset: 'center',
-        // config. para todas telas
+        // nao exibe o texto do header na proxima tela, somente icones
+        headerBackTitleVisible: false,
+        // config. do header visivel em todas telas
         defaultNavigationOptions: {
             headerStyle: {
                  backgroundColor: "#7159c1",
