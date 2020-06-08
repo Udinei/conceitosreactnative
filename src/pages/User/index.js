@@ -2,7 +2,8 @@
 import { View } from 'react-native';
 
 // import { Container } from './styles';
-
-export default function User() {
+// desestruturando para pegar o navigation do props
+export default function User({ navigation }) {
+    console.tron.log(navigation.getParam('user'));
   return <View/>
 }
